@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+#caption a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+#caption {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+#caption>h1 {
+  border: 1px solid;
+  height: 50px;
+}
+
+#nav-ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+  #caption>h1 {
+    padding: 0 0 8px 0;
+    width: 200px;
+    font-size: 34px;
+    text-align: center;
+  }
+
+  #nav-ul li a {
+    margin-left: 40px;
+    font-size: 34px;
+  }
+
+  #main-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  #about>div {
+    display: flex;
+    justify-content: space-around;
+    width: 820px;
+    margin: 100px auto 0 auto;
+  }
+
+  #works>div {
+    display: flex;
+    height: 260px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .works {
+    margin: 45px 10px 0 10px;
+    display: table;
+  }
+
+  .works>img {
+    height: 155px;
+    width: 207px;
+  }
+
+  .works>p {
+    display: table-caption;
+    caption-side: bottom;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  body {
+    margin: 0;
+  }
+
+  #caption>h1 {
+    padding: auto;
+    margin-left: 27px;
+    width: 190px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #nav-ul {
+    margin: 24px 20px 0 0;
+  }
+
+  li a {
+    margin-left: 25px;
+    font-size: 25px;
+  }
+
+  #main-photo {
+    width: 100%;
+  }
+
+  .about-photo {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .self-introduce {
+    margin: -20px auto 0 auto;
+    width: 300px;
+  }
+
+  .works {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    max-width: 358px;
+    margin: 0 auto;
+  }
+
+  .works > p {
+    margin-top: 0;
+  }
+
+}
+
+
+#about>h2 {
+  text-align: center;
+  font-size: 34px;
+}
+
+.self-introduce>p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#about>li {
+  font-size: 18px;
+}
+
+#works {
+  margin-top: 90px;
+}
+
+
+#works>h2 {
+  text-align: center;
+  font-size: 34px;
+}
+
+
+
+footer {
+  margin-top: 80px;
+  text-align: center;
+}
