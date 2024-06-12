@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 > a {
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+}
+
+li > a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 34px;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  margin: 80px auto auto auto;
+  text-align: center;
+  font-size: 34px;
+}
+
+.about {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 960px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+}
+
+.name > p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.name {
+  margin-left: 130px;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.item {
+  width: 25%;
+  margin: 30px 0 60px 15px;
+}
+
+footer {
+  padding-bottom: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width:767px) {
+
+  h1 {
+    font-size: 28px;
+  }
+
+  li > a {
+    font-size: 21px;
+  }
+
+  h2 {
+    margin-top: 30px;
+  }
+
+  .about, .works {
+    margin-top:50px;
+  }
+
+  .name {
+    margin: 0 auto;
+  }
+
+  .item {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+}
